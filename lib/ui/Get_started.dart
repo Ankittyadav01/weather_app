@@ -15,7 +15,26 @@ class GetStarted extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [],
+            children: [
+              Image.asset('assets/get-started.png'),
+              const SizedBox(
+                height: 30,
+              ),
+              Container(
+                height: 50,
+                width: size.width * 0.7,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: const BorderRadius.all(Radius.circular(10)),
+                ),
+                child: const Center(
+                  child: Text(
+                    'Get Started',
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
+                ),
+              )
+            ],
           ),
         ),
       ),
